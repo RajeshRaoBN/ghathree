@@ -15,3 +15,6 @@ jobs:
 
       - name: Run a test script
         run: echo "This is run on ${RUNNER_OS}"
+
+      - name: Test variable name
+        run: echo "The value of the variable is: ${{ vars.JOB_NAME }}"

@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-          OPP_SYS: ${ RUNNER_OS }
+          OPP_SYS: ${RUNNER_OS}
     steps:
       - uses: actions/checkout@v3
 

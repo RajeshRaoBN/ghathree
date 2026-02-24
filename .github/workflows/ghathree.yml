@@ -18,3 +18,8 @@ jobs:
 
       - name: Display the JOB_NAME variable
         run: echo "The JOB_NAME variable value is ${{ vars.JOB_NAME }}"
+
+      - name: Display the env variable using env
+        run: echo "The env variable value is $env.OPP_SYS"
+        env:
+          OPP_SYS: ${ RUNNER_OS }
